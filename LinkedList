@@ -35,22 +35,17 @@ LinkedList.prototype = {
 
 
 	 item : function (index) {
-
-//check for out of bounds values
-
-if(index > -1 && index <this._length){
-
-	var current = this._head, i=0;
-
-while(i++ < index){
-	current = current.next;
-}
-return current.data;
-}else {
-	return null;
-}
-
-},
+	 	//check for out of bounds values
+	 	if(index > -1 && index <this._length){
+			var current = this._head, i=0;
+			while(i++ < index){
+				current = current.next;
+			}
+			return current.data;
+		}else {
+			return null;
+		}
+	},
 
 	
     remove : function (index) {
@@ -81,7 +76,7 @@ return current.data;
     	} 
     }
 
-
+}
 
 var list = new LinkedList ();
 list.add ("Ford");
@@ -91,8 +86,4 @@ list.add ("Jeep");
 alert(list.item(2));
 list.remove(2);
 alert(list.item(2));
-
-
-
-	
-   
+list.item();
