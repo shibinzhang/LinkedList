@@ -4,7 +4,7 @@
 
 function LinkedList() {
 	this._length = 0;
-	this._head = null;
+	this._head = null
 }
 
 
@@ -31,7 +31,7 @@ LinkedList.prototype = {
 
 		// don't forget to update the count
 		this._length++;
-	}
+	},
 
 
 	 item : function (index) {
@@ -50,7 +50,7 @@ return current.data;
 	return null;
 }
 
-}
+},
 
 	
     remove : function (index) {
@@ -91,3 +91,8 @@ list.add ("Jeep");
 alert(list.item(2));
 list.remove(2);
 alert(list.item(2));
+
+
+
+	
+   
